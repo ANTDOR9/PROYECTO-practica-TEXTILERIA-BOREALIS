@@ -1,0 +1,224 @@
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Light theme colors */
+  color-scheme: light;
+  color: #333333;
+  background-color: #f5f5f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* MDL Header Customization - Blue Theme */
+.mdl-layout__header {
+  background-color: #2196F3 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mdl-layout__header-row {
+  padding-left: 60px;
+}
+
+.mdl-layout-title {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.mdl-navigation__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.mdl-navigation__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+/* Drawer Button - CRITICAL FIX */
+.mdl-layout__drawer-button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background: transparent !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  height: 64px !important;
+  width: 56px !important;
+  z-index: 4 !important;
+}
+
+.mdl-layout__drawer-button i {
+  color: white !important;
+  font-size: 24px;
+}
+
+/* Drawer Styling */
+.mdl-layout-drawer {
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+}
+
+.mdl-layout-drawer .mdl-layout-title {
+  color: #2196F3;
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.mdl-layout-drawer .mdl-navigation__link {
+  color: #333 !important;
+  padding: 16px 24px;
+  transition: all 0.3s ease;
+}
+
+.mdl-layout-drawer .mdl-navigation__link:hover {
+  background-color: #E3F2FD;
+  color: #2196F3 !important;
+}
+
+/* Content Area */
+.mdl-layout__content {
+  background-color: #f5f5f5;
+}
+
+.page-content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product Cards Enhancement */
+.mdl-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.mdl-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-4px);
+}
+
+.mdl-card__title {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.mdl-card__supporting-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.mdl-button--colored {
+  background-color: #2196F3 !important;
+  color: white !important;
+}
+
+.mdl-button--colored:hover {
+  background-color: #1976D2 !important;
+}
+
+/* Form Styling */
+.mdl-textfield__input {
+  border-bottom-color: #2196F3;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+  color: #2196F3;
+}
+
+.mdl-textfield__label:after {
+  background-color: #2196F3;
+}
+
+/* Radio Buttons */
+.mdl-radio.is-checked .mdl-radio__outer-circle {
+  border-color: #2196F3;
+}
+
+.mdl-radio.is-checked .mdl-radio__inner-circle {
+  background-color: #2196F3;
+}
+
+/* Grid Improvements */
+.mdl-grid {
+  padding: 0;
+}
+
+.mdl-cell {
+  margin: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .mdl-layout__header-row {
+    padding-left: 72px;
+  }
+
+  .mdl-navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mdl-layout__drawer-button {
+    display: none !important;
+  }
+
+  .mdl-layout__header-row {
+    padding-left: 40px;
+  }
+}
+
+/* Search Bar Styling */
+.mdl-textfield--expandable {
+  margin-right: 16px;
+}
+
+.mdl-textfield--expandable .mdl-button--icon {
+  color: white !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2196F3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1976D2;
+}
