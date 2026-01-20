@@ -1,4 +1,5 @@
 # Textilería Borealis 🧵
+***ELABORADO POR EL EQUIPO BOREALIS pro max xd***
 
 Proyecto frontend realizado como práctica, basado en un catálogo visual de artesanías y textiles peruanos.  
 El objetivo de este repositorio es **aprender y practicar React, Vite, CSS y el flujo de trabajo con Git/GitHub**.
